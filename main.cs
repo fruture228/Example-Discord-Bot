@@ -17,7 +17,7 @@ namespace TestBot
             client.MessageReceived += CommandsHandler;
             client.Log += Log;
 
-            var token = "Сюда свой токен";
+            var token = "РўРІРѕР№ С‚РѕРєРµРЅ ->";
 
             await client.LoginAsync(TokenType.Bot, token);
             await client.StartAsync();
@@ -36,8 +36,8 @@ namespace TestBot
             if (!msg.Author.IsBot)
                 switch (msg.Content)
                 {
-                    case "!Привет":
+                    case "!РџСЂРёРІРµС‚":
                         {
-                            msg.Channel.SendMessageAsync($"Привет, {msg.Author})");
+                            msg.Channel.SendMessageAsync($"РџСЂРёРІРµС‚, {msg.Author})");
                             break;
                         }
